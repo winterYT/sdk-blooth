@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E2DB8D122A7AA720042050B /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DB8D022A7AA720042050B /* LogViewController.m */; };
+		3E440C8F22AF8AFC007D3A0A /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E440C8E22AF8AFC007D3A0A /* UIView+Toast.m */; };
+		3E440C9222AF8B1F007D3A0A /* ToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E440C9122AF8B1F007D3A0A /* ToastUtil.m */; };
+		3E513B0322B1F30700C4F934 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B0122B1F30700C4F934 /* LoadingView.m */; };
+		3E513B1F22B1F45200C4F934 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B0722B1F45200C4F934 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		3E513B2022B1F45200C4F934 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1022B1F45200C4F934 /* ViewController+MASAdditions.m */; };
+		3E513B2122B1F45200C4F934 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1422B1F45200C4F934 /* MASCompositeConstraint.m */; };
+		3E513B2222B1F45200C4F934 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1522B1F45200C4F934 /* MASConstraintMaker.m */; };
+		3E513B2322B1F45200C4F934 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1622B1F45200C4F934 /* MASLayoutConstraint.m */; };
+		3E513B2422B1F45200C4F934 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1722B1F45200C4F934 /* NSArray+MASAdditions.m */; };
+		3E513B2522B1F45200C4F934 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1822B1F45200C4F934 /* View+MASAdditions.m */; };
+		3E513B2622B1F45200C4F934 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1B22B1F45200C4F934 /* MASConstraint.m */; };
+		3E513B2722B1F45200C4F934 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1D22B1F45200C4F934 /* MASViewConstraint.m */; };
+		3E513B2822B1F45200C4F934 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E513B1E22B1F45200C4F934 /* MASViewAttribute.m */; };
+		3E5FC0622296914D00CFA4F1 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FC0612296914D00CFA4F1 /* HistoryViewController.m */; };
+		3E5FC0652296937B00CFA4F1 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FC0642296937B00CFA4F1 /* HistoryTableViewCell.m */; };
+		3E84906E228C091800EA20EB /* OMRONLibDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E84906D228C091800EA20EB /* OMRONLibDemoUITests.m */; };
+		3E84907C228C0B1700EA20EB /* OMRONLibDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E84907B228C0B1700EA20EB /* OMRONLibDemoTests.m */; };
+		3ED72DB3228EA9F20074D4FE /* LocalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED72DB2228EA9F20074D4FE /* LocalStore.m */; };
+		3ED9AE9F228D0314001DACDE /* DeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9AE9D228D0314001DACDE /* DeviceListViewController.m */; };
+		3ED9AEAA228D0895001DACDE /* BindDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9AEA8228D0895001DACDE /* BindDeviceTableViewCell.m */; };
+		3ED9AEAB228D0895001DACDE /* BindDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9AEA9228D0895001DACDE /* BindDeviceTableViewCell.xib */; };
+		3EE86A74228955B9007FE47C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE86A73228955B9007FE47C /* AppDelegate.m */; };
+		3EE86A77228955B9007FE47C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE86A76228955B9007FE47C /* ViewController.m */; };
+		3EE86A7A228955B9007FE47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE86A78228955B9007FE47C /* Main.storyboard */; };
+		3EE86A7C228955BA007FE47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE86A7B228955BA007FE47C /* Assets.xcassets */; };
+		3EE86A7F228955BA007FE47C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE86A7D228955BA007FE47C /* LaunchScreen.storyboard */; };
+		3EE86A82228955BA007FE47C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE86A81228955BA007FE47C /* main.m */; };
+		557B7D75280148AA003A1917 /* BluetoothPairingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557B7D73280148AA003A1917 /* BluetoothPairingListController.m */; };
+		557B7D76280148AA003A1917 /* BluetoothPairingListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 557B7D74280148AA003A1917 /* BluetoothPairingListController.xib */; };
+		55E0728127F9BCAB0026D3A4 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E0728027F9BCAB0026D3A4 /* UIViewController+BackButtonHandler.m */; };
+		76364B2F2317D331006919A0 /* OMRONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76364B2E2317D331006919A0 /* OMRONLib.framework */; };
+		76364B4C231CE4FE006919A0 /* BFUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B4A231CE4FE006919A0 /* BFUserInfoViewController.m */; };
+		76364B4D231CE4FE006919A0 /* BFUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76364B4B231CE4FE006919A0 /* BFUserInfoViewController.xib */; };
+		76364B68231E4641006919A0 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B56231E4641006919A0 /* ActionSheetDatePicker.m */; };
+		76364B69231E4641006919A0 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B58231E4641006919A0 /* ActionSheetLocalePicker.m */; };
+		76364B6A231E4641006919A0 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B5C231E4641006919A0 /* ActionSheetDistancePicker.m */; };
+		76364B6B231E4641006919A0 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B5D231E4641006919A0 /* ActionSheetCustomPicker.m */; };
+		76364B6C231E4641006919A0 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B5F231E4641006919A0 /* SWActionSheet.m */; };
+		76364B6D231E4641006919A0 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B61231E4641006919A0 /* ActionSheetStringPicker.m */; };
+		76364B6E231E4641006919A0 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B62231E4641006919A0 /* DistancePickerView.m */; };
+		76364B6F231E4641006919A0 /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B63231E4641006919A0 /* ActionSheetMultipleStringPicker.m */; };
+		76364B70231E4641006919A0 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B64231E4641006919A0 /* AbstractActionSheetPicker.m */; };
+		76364B75231E53AB006919A0 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B72231E53AB006919A0 /* NSDate+Extension.m */; };
+		76364B76231E53AB006919A0 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76364B74231E53AB006919A0 /* NSDate+Utilities.m */; };
+		768F2A64233222AB004115FD /* BFHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F2A62233222AA004115FD /* BFHistoryTableViewCell.m */; };
+		76D23E90231765B100B3D9F7 /* BFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D23E8F231765B100B3D9F7 /* BFViewController.m */; };
+		76D23E93231765C200B3D9F7 /* BPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D23E92231765C200B3D9F7 /* BPViewController.m */; };
+		76F2A10A2338B53E004695A7 /* MeasureGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F2A1082338B53E004695A7 /* MeasureGuideViewController.m */; };
+		76F2A10B2338B53E004695A7 /* MeasureGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F2A1092338B53E004695A7 /* MeasureGuideViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E849070228C091800EA20EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EE86A67228955B9007FE47C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE86A6E228955B9007FE47C;
+			remoteInfo = OMRONLibDemo;
+		};
+		3E84907E228C0B1700EA20EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EE86A67228955B9007FE47C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE86A6E228955B9007FE47C;
+			remoteInfo = OMRONLibDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76364B3C231CAC6A006919A0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3E2DB8CF22A7AA720042050B /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		3E2DB8D022A7AA720042050B /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		3E440C8D22AF8AFC007D3A0A /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		3E440C8E22AF8AFC007D3A0A /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		3E440C9022AF8B1F007D3A0A /* ToastUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastUtil.h; sourceTree = "<group>"; };
+		3E440C9122AF8B1F007D3A0A /* ToastUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUtil.m; sourceTree = "<group>"; };
+		3E513B0122B1F30700C4F934 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		3E513B0222B1F30700C4F934 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		3E513B0622B1F45200C4F934 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		3E513B0722B1F45200C4F934 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		3E513B0822B1F45200C4F934 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		3E513B0922B1F45200C4F934 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		3E513B0A22B1F45200C4F934 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3E513B0B22B1F45200C4F934 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		3E513B0C22B1F45200C4F934 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		3E513B0D22B1F45200C4F934 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		3E513B0E22B1F45200C4F934 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		3E513B0F22B1F45200C4F934 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		3E513B1022B1F45200C4F934 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		3E513B1122B1F45200C4F934 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		3E513B1222B1F45200C4F934 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		3E513B1322B1F45200C4F934 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		3E513B1422B1F45200C4F934 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		3E513B1522B1F45200C4F934 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		3E513B1622B1F45200C4F934 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		3E513B1722B1F45200C4F934 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		3E513B1822B1F45200C4F934 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		3E513B1922B1F45200C4F934 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3E513B1A22B1F45200C4F934 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		3E513B1B22B1F45200C4F934 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		3E513B1C22B1F45200C4F934 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		3E513B1D22B1F45200C4F934 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		3E513B1E22B1F45200C4F934 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		3E5FC0602296914D00CFA4F1 /* HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		3E5FC0612296914D00CFA4F1 /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		3E5FC0632296937B00CFA4F1 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		3E5FC0642296937B00CFA4F1 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		3E84906B228C091800EA20EB /* OMRONLibDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMRONLibDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E84906D228C091800EA20EB /* OMRONLibDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMRONLibDemoUITests.m; sourceTree = "<group>"; };
+		3E84906F228C091800EA20EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E849079228C0B1700EA20EB /* OMRONLibDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMRONLibDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E84907B228C0B1700EA20EB /* OMRONLibDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMRONLibDemoTests.m; sourceTree = "<group>"; };
+		3E84907D228C0B1700EA20EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED72DB1228EA9F20074D4FE /* LocalStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalStore.h; sourceTree = "<group>"; };
+		3ED72DB2228EA9F20074D4FE /* LocalStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalStore.m; sourceTree = "<group>"; };
+		3ED9AE9C228D0314001DACDE /* DeviceListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceListViewController.h; sourceTree = "<group>"; };
+		3ED9AE9D228D0314001DACDE /* DeviceListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceListViewController.m; sourceTree = "<group>"; };
+		3ED9AEA7228D0895001DACDE /* BindDeviceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindDeviceTableViewCell.h; sourceTree = "<group>"; };
+		3ED9AEA8228D0895001DACDE /* BindDeviceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindDeviceTableViewCell.m; sourceTree = "<group>"; };
+		3ED9AEA9228D0895001DACDE /* BindDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BindDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		3EE86A6F228955B9007FE47C /* OMRONLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMRONLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE86A72228955B9007FE47C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EE86A73228955B9007FE47C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3EE86A75228955B9007FE47C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3EE86A76228955B9007FE47C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3EE86A79228955B9007FE47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EE86A7B228955BA007FE47C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE86A7E228955BA007FE47C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EE86A80228955BA007FE47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE86A81228955BA007FE47C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		557B7D72280148AA003A1917 /* BluetoothPairingListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothPairingListController.h; sourceTree = "<group>"; };
+		557B7D73280148AA003A1917 /* BluetoothPairingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothPairingListController.m; sourceTree = "<group>"; };
+		557B7D74280148AA003A1917 /* BluetoothPairingListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BluetoothPairingListController.xib; sourceTree = "<group>"; };
+		55E0727F27F9BCAB0026D3A4 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		55E0728027F9BCAB0026D3A4 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		76364B2E2317D331006919A0 /* OMRONLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OMRONLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76364B49231CE4FE006919A0 /* BFUserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFUserInfoViewController.h; sourceTree = "<group>"; };
+		76364B4A231CE4FE006919A0 /* BFUserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFUserInfoViewController.m; sourceTree = "<group>"; };
+		76364B4B231CE4FE006919A0 /* BFUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BFUserInfoViewController.xib; sourceTree = "<group>"; };
+		76364B54231E4641006919A0 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		76364B55231E4641006919A0 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		76364B56231E4641006919A0 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		76364B57231E4641006919A0 /* SWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWActionSheet.h; sourceTree = "<group>"; };
+		76364B58231E4641006919A0 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		76364B59231E4641006919A0 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		76364B5A231E4641006919A0 /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
+		76364B5B231E4641006919A0 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
+		76364B5C231E4641006919A0 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		76364B5D231E4641006919A0 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		76364B5E231E4641006919A0 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		76364B5F231E4641006919A0 /* SWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWActionSheet.m; sourceTree = "<group>"; };
+		76364B60231E4641006919A0 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		76364B61231E4641006919A0 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		76364B62231E4641006919A0 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
+		76364B63231E4641006919A0 /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
+		76364B64231E4641006919A0 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		76364B65231E4641006919A0 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		76364B66231E4641006919A0 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
+		76364B67231E4641006919A0 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		76364B71231E53AB006919A0 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		76364B72231E53AB006919A0 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		76364B73231E53AB006919A0 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		76364B74231E53AB006919A0 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		768F2A61233222AA004115FD /* BFHistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFHistoryTableViewCell.h; sourceTree = "<group>"; };
+		768F2A62233222AA004115FD /* BFHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFHistoryTableViewCell.m; sourceTree = "<group>"; };
+		76D23E8E231765B100B3D9F7 /* BFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFViewController.h; sourceTree = "<group>"; };
+		76D23E8F231765B100B3D9F7 /* BFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFViewController.m; sourceTree = "<group>"; };
+		76D23E91231765C200B3D9F7 /* BPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPViewController.h; sourceTree = "<group>"; };
+		76D23E92231765C200B3D9F7 /* BPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPViewController.m; sourceTree = "<group>"; };
+		76F2A1072338B53E004695A7 /* MeasureGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureGuideViewController.h; sourceTree = "<group>"; };
+		76F2A1082338B53E004695A7 /* MeasureGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureGuideViewController.m; sourceTree = "<group>"; };
+		76F2A1092338B53E004695A7 /* MeasureGuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasureGuideViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E849068228C091800EA20EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E849076228C0B1700EA20EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE86A6C228955B9007FE47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76364B2F2317D331006919A0 /* OMRONLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E440C8622AF8A33007D3A0A /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				76364B73231E53AB006919A0 /* NSDate+Extension.h */,
+				76364B72231E53AB006919A0 /* NSDate+Extension.m */,
+				76364B71231E53AB006919A0 /* NSDate+Utilities.h */,
+				76364B74231E53AB006919A0 /* NSDate+Utilities.m */,
+				76364B53231E4641006919A0 /* Pickers */,
+				3E513B0222B1F30700C4F934 /* LoadingView.h */,
+				3E513B0122B1F30700C4F934 /* LoadingView.m */,
+				3E440C8D22AF8AFC007D3A0A /* UIView+Toast.h */,
+				3E440C8E22AF8AFC007D3A0A /* UIView+Toast.m */,
+				3E440C9022AF8B1F007D3A0A /* ToastUtil.h */,
+				3E440C9122AF8B1F007D3A0A /* ToastUtil.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		3E513B0522B1F45200C4F934 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3E513B0622B1F45200C4F934 /* MASCompositeConstraint.h */,
+				3E513B0722B1F45200C4F934 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				3E513B0822B1F45200C4F934 /* MASConstraint+Private.h */,
+				3E513B0922B1F45200C4F934 /* MASLayoutConstraint.h */,
+				3E513B0A22B1F45200C4F934 /* NSArray+MASShorthandAdditions.h */,
+				3E513B0B22B1F45200C4F934 /* MASConstraintMaker.h */,
+				3E513B0C22B1F45200C4F934 /* View+MASAdditions.h */,
+				3E513B0D22B1F45200C4F934 /* NSArray+MASAdditions.h */,
+				3E513B0E22B1F45200C4F934 /* MASUtilities.h */,
+				3E513B0F22B1F45200C4F934 /* MASViewAttribute.h */,
+				3E513B1022B1F45200C4F934 /* ViewController+MASAdditions.m */,
+				3E513B1122B1F45200C4F934 /* MASViewConstraint.h */,
+				3E513B1222B1F45200C4F934 /* MASConstraint.h */,
+				3E513B1322B1F45200C4F934 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				3E513B1422B1F45200C4F934 /* MASCompositeConstraint.m */,
+				3E513B1522B1F45200C4F934 /* MASConstraintMaker.m */,
+				3E513B1622B1F45200C4F934 /* MASLayoutConstraint.m */,
+				3E513B1722B1F45200C4F934 /* NSArray+MASAdditions.m */,
+				3E513B1822B1F45200C4F934 /* View+MASAdditions.m */,
+				3E513B1922B1F45200C4F934 /* View+MASShorthandAdditions.h */,
+				3E513B1A22B1F45200C4F934 /* Masonry.h */,
+				3E513B1B22B1F45200C4F934 /* MASConstraint.m */,
+				3E513B1C22B1F45200C4F934 /* ViewController+MASAdditions.h */,
+				3E513B1D22B1F45200C4F934 /* MASViewConstraint.m */,
+				3E513B1E22B1F45200C4F934 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		3E84906C228C091800EA20EB /* OMRONLibDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E84906D228C091800EA20EB /* OMRONLibDemoUITests.m */,
+				3E84906F228C091800EA20EB /* Info.plist */,
+			);
+			path = OMRONLibDemoUITests;
+			sourceTree = "<group>";
+		};
+		3E84907A228C0B1700EA20EB /* OMRONLibDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E84907B228C0B1700EA20EB /* OMRONLibDemoTests.m */,
+				3E84907D228C0B1700EA20EB /* Info.plist */,
+			);
+			path = OMRONLibDemoTests;
+			sourceTree = "<group>";
+		};
+		3ED9AEA1228D036A001DACDE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3ED9AEA7228D0895001DACDE /* BindDeviceTableViewCell.h */,
+				3ED9AEA8228D0895001DACDE /* BindDeviceTableViewCell.m */,
+				3ED9AEA9228D0895001DACDE /* BindDeviceTableViewCell.xib */,
+				3E5FC0632296937B00CFA4F1 /* HistoryTableViewCell.h */,
+				3E5FC0642296937B00CFA4F1 /* HistoryTableViewCell.m */,
+				768F2A61233222AA004115FD /* BFHistoryTableViewCell.h */,
+				768F2A62233222AA004115FD /* BFHistoryTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3EE86A66228955B9007FE47C = {
+			isa = PBXGroup;
+			children = (
+				3EE86A71228955B9007FE47C /* OMRONLibDemo */,
+				3E84906C228C091800EA20EB /* OMRONLibDemoUITests */,
+				3E84907A228C0B1700EA20EB /* OMRONLibDemoTests */,
+				3EE86A70228955B9007FE47C /* Products */,
+				3EE86A8822895612007FE47C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EE86A70228955B9007FE47C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EE86A6F228955B9007FE47C /* OMRONLibDemo.app */,
+				3E84906B228C091800EA20EB /* OMRONLibDemoUITests.xctest */,
+				3E849079228C0B1700EA20EB /* OMRONLibDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EE86A71228955B9007FE47C /* OMRONLibDemo */ = {
+			isa = PBXGroup;
+			children = (
+				55E0727E27F9BC4B0026D3A4 /* Category */,
+				3E513B0522B1F45200C4F934 /* Masonry */,
+				3E440C8622AF8A33007D3A0A /* Toast */,
+				3ED9AEA1228D036A001DACDE /* Cell */,
+				3EE86A72228955B9007FE47C /* AppDelegate.h */,
+				3EE86A73228955B9007FE47C /* AppDelegate.m */,
+				3EE86A75228955B9007FE47C /* ViewController.h */,
+				3EE86A76228955B9007FE47C /* ViewController.m */,
+				3EE86A78228955B9007FE47C /* Main.storyboard */,
+				3EE86A7B228955BA007FE47C /* Assets.xcassets */,
+				3EE86A7D228955BA007FE47C /* LaunchScreen.storyboard */,
+				3EE86A80228955BA007FE47C /* Info.plist */,
+				3EE86A81228955BA007FE47C /* main.m */,
+				3ED9AE9C228D0314001DACDE /* DeviceListViewController.h */,
+				3ED9AE9D228D0314001DACDE /* DeviceListViewController.m */,
+				557B7D72280148AA003A1917 /* BluetoothPairingListController.h */,
+				557B7D73280148AA003A1917 /* BluetoothPairingListController.m */,
+				557B7D74280148AA003A1917 /* BluetoothPairingListController.xib */,
+				3ED72DB1228EA9F20074D4FE /* LocalStore.h */,
+				3ED72DB2228EA9F20074D4FE /* LocalStore.m */,
+				3E5FC0602296914D00CFA4F1 /* HistoryViewController.h */,
+				3E5FC0612296914D00CFA4F1 /* HistoryViewController.m */,
+				3E2DB8CF22A7AA720042050B /* LogViewController.h */,
+				3E2DB8D022A7AA720042050B /* LogViewController.m */,
+				76D23E8E231765B100B3D9F7 /* BFViewController.h */,
+				76D23E8F231765B100B3D9F7 /* BFViewController.m */,
+				76D23E91231765C200B3D9F7 /* BPViewController.h */,
+				76D23E92231765C200B3D9F7 /* BPViewController.m */,
+				76364B49231CE4FE006919A0 /* BFUserInfoViewController.h */,
+				76364B4A231CE4FE006919A0 /* BFUserInfoViewController.m */,
+				76364B4B231CE4FE006919A0 /* BFUserInfoViewController.xib */,
+				76F2A1072338B53E004695A7 /* MeasureGuideViewController.h */,
+				76F2A1082338B53E004695A7 /* MeasureGuideViewController.m */,
+				76F2A1092338B53E004695A7 /* MeasureGuideViewController.xib */,
+			);
+			path = OMRONLibDemo;
+			sourceTree = "<group>";
+		};
+		3EE86A8822895612007FE47C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76364B2E2317D331006919A0 /* OMRONLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55E0727E27F9BC4B0026D3A4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				55E0727F27F9BCAB0026D3A4 /* UIViewController+BackButtonHandler.h */,
+				55E0728027F9BCAB0026D3A4 /* UIViewController+BackButtonHandler.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		76364B53231E4641006919A0 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				76364B54231E4641006919A0 /* ActionSheetCustomPicker.h */,
+				76364B55231E4641006919A0 /* ActionSheetStringPicker.h */,
+				76364B56231E4641006919A0 /* ActionSheetDatePicker.m */,
+				76364B57231E4641006919A0 /* SWActionSheet.h */,
+				76364B58231E4641006919A0 /* ActionSheetLocalePicker.m */,
+				76364B59231E4641006919A0 /* AbstractActionSheetPicker.h */,
+				76364B5A231E4641006919A0 /* ActionSheetMultipleStringPicker.h */,
+				76364B5B231E4641006919A0 /* DistancePickerView.h */,
+				76364B5C231E4641006919A0 /* ActionSheetDistancePicker.m */,
+				76364B5D231E4641006919A0 /* ActionSheetCustomPicker.m */,
+				76364B5E231E4641006919A0 /* ActionSheetCustomPickerDelegate.h */,
+				76364B5F231E4641006919A0 /* SWActionSheet.m */,
+				76364B60231E4641006919A0 /* ActionSheetDatePicker.h */,
+				76364B61231E4641006919A0 /* ActionSheetStringPicker.m */,
+				76364B62231E4641006919A0 /* DistancePickerView.m */,
+				76364B63231E4641006919A0 /* ActionSheetMultipleStringPicker.m */,
+				76364B64231E4641006919A0 /* AbstractActionSheetPicker.m */,
+				76364B65231E4641006919A0 /* ActionSheetLocalePicker.h */,
+				76364B66231E4641006919A0 /* ActionSheetPicker.h */,
+				76364B67231E4641006919A0 /* ActionSheetDistancePicker.h */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E84906A228C091800EA20EB /* OMRONLibDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E849072228C091800EA20EB /* Build configuration list for PBXNativeTarget "OMRONLibDemoUITests" */;
+			buildPhases = (
+				3E849067228C091800EA20EB /* Sources */,
+				3E849068228C091800EA20EB /* Frameworks */,
+				3E849069228C091800EA20EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E849071228C091800EA20EB /* PBXTargetDependency */,
+			);
+			name = OMRONLibDemoUITests;
+			productName = OMRONLibDemoUITests;
+			productReference = 3E84906B228C091800EA20EB /* OMRONLibDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3E849078228C0B1700EA20EB /* OMRONLibDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E849080228C0B1700EA20EB /* Build configuration list for PBXNativeTarget "OMRONLibDemoTests" */;
+			buildPhases = (
+				3E849075228C0B1700EA20EB /* Sources */,
+				3E849076228C0B1700EA20EB /* Frameworks */,
+				3E849077228C0B1700EA20EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E84907F228C0B1700EA20EB /* PBXTargetDependency */,
+			);
+			name = OMRONLibDemoTests;
+			productName = OMRONLibDemoTests;
+			productReference = 3E849079228C0B1700EA20EB /* OMRONLibDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EE86A6E228955B9007FE47C /* OMRONLibDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE86A85228955BA007FE47C /* Build configuration list for PBXNativeTarget "OMRONLibDemo" */;
+			buildPhases = (
+				3EE86A6B228955B9007FE47C /* Sources */,
+				3EE86A6C228955B9007FE47C /* Frameworks */,
+				3EE86A6D228955B9007FE47C /* Resources */,
+				76364B3C231CAC6A006919A0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMRONLibDemo;
+			productName = OMRONLibDemo;
+			productReference = 3EE86A6F228955B9007FE47C /* OMRONLibDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EE86A67228955B9007FE47C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Calvin;
+				TargetAttributes = {
+					3E84906A228C091800EA20EB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3EE86A6E228955B9007FE47C;
+					};
+					3E849078228C0B1700EA20EB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3EE86A6E228955B9007FE47C;
+					};
+					3EE86A6E228955B9007FE47C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3EE86A6A228955B9007FE47C /* Build configuration list for PBXProject "OMRONLibDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EE86A66228955B9007FE47C;
+			productRefGroup = 3EE86A70228955B9007FE47C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EE86A6E228955B9007FE47C /* OMRONLibDemo */,
+				3E84906A228C091800EA20EB /* OMRONLibDemoUITests */,
+				3E849078228C0B1700EA20EB /* OMRONLibDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E849069228C091800EA20EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E849077228C0B1700EA20EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE86A6D228955B9007FE47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F2A10B2338B53E004695A7 /* MeasureGuideViewController.xib in Resources */,
+				3ED9AEAB228D0895001DACDE /* BindDeviceTableViewCell.xib in Resources */,
+				3EE86A7F228955BA007FE47C /* LaunchScreen.storyboard in Resources */,
+				557B7D76280148AA003A1917 /* BluetoothPairingListController.xib in Resources */,
+				3EE86A7C228955BA007FE47C /* Assets.xcassets in Resources */,
+				76364B4D231CE4FE006919A0 /* BFUserInfoViewController.xib in Resources */,
+				3EE86A7A228955B9007FE47C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E849067228C091800EA20EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E84906E228C091800EA20EB /* OMRONLibDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E849075228C0B1700EA20EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E84907C228C0B1700EA20EB /* OMRONLibDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE86A6B228955B9007FE47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E513B2522B1F45200C4F934 /* View+MASAdditions.m in Sources */,
+				76364B6B231E4641006919A0 /* ActionSheetCustomPicker.m in Sources */,
+				3E513B2822B1F45200C4F934 /* MASViewAttribute.m in Sources */,
+				3E513B1F22B1F45200C4F934 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				76F2A10A2338B53E004695A7 /* MeasureGuideViewController.m in Sources */,
+				76364B6D231E4641006919A0 /* ActionSheetStringPicker.m in Sources */,
+				76364B70231E4641006919A0 /* AbstractActionSheetPicker.m in Sources */,
+				3ED9AE9F228D0314001DACDE /* DeviceListViewController.m in Sources */,
+				76364B6C231E4641006919A0 /* SWActionSheet.m in Sources */,
+				3E513B0322B1F30700C4F934 /* LoadingView.m in Sources */,
+				3E513B2622B1F45200C4F934 /* MASConstraint.m in Sources */,
+				76364B69231E4641006919A0 /* ActionSheetLocalePicker.m in Sources */,
+				76D23E93231765C200B3D9F7 /* BPViewController.m in Sources */,
+				76364B4C231CE4FE006919A0 /* BFUserInfoViewController.m in Sources */,
+				3EE86A77228955B9007FE47C /* ViewController.m in Sources */,
+				3E513B2122B1F45200C4F934 /* MASCompositeConstraint.m in Sources */,
+				3E513B2222B1F45200C4F934 /* MASConstraintMaker.m in Sources */,
+				3E513B2022B1F45200C4F934 /* ViewController+MASAdditions.m in Sources */,
+				76364B6F231E4641006919A0 /* ActionSheetMultipleStringPicker.m in Sources */,
+				3E2DB8D122A7AA720042050B /* LogViewController.m in Sources */,
+				3EE86A82228955BA007FE47C /* main.m in Sources */,
+				76D23E90231765B100B3D9F7 /* BFViewController.m in Sources */,
+				557B7D75280148AA003A1917 /* BluetoothPairingListController.m in Sources */,
+				76364B75231E53AB006919A0 /* NSDate+Extension.m in Sources */,
+				76364B6E231E4641006919A0 /* DistancePickerView.m in Sources */,
+				3ED72DB3228EA9F20074D4FE /* LocalStore.m in Sources */,
+				55E0728127F9BCAB0026D3A4 /* UIViewController+BackButtonHandler.m in Sources */,
+				768F2A64233222AB004115FD /* BFHistoryTableViewCell.m in Sources */,
+				3ED9AEAA228D0895001DACDE /* BindDeviceTableViewCell.m in Sources */,
+				76364B6A231E4641006919A0 /* ActionSheetDistancePicker.m in Sources */,
+				3E513B2322B1F45200C4F934 /* MASLayoutConstraint.m in Sources */,
+				3E5FC0622296914D00CFA4F1 /* HistoryViewController.m in Sources */,
+				3E5FC0652296937B00CFA4F1 /* HistoryTableViewCell.m in Sources */,
+				3E513B2422B1F45200C4F934 /* NSArray+MASAdditions.m in Sources */,
+				76364B68231E4641006919A0 /* ActionSheetDatePicker.m in Sources */,
+				76364B76231E53AB006919A0 /* NSDate+Utilities.m in Sources */,
+				3E440C8F22AF8AFC007D3A0A /* UIView+Toast.m in Sources */,
+				3E513B2722B1F45200C4F934 /* MASViewConstraint.m in Sources */,
+				3EE86A74228955B9007FE47C /* AppDelegate.m in Sources */,
+				3E440C9222AF8B1F007D3A0A /* ToastUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E849071228C091800EA20EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE86A6E228955B9007FE47C /* OMRONLibDemo */;
+			targetProxy = 3E849070228C091800EA20EB /* PBXContainerItemProxy */;
+		};
+		3E84907F228C0B1700EA20EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE86A6E228955B9007FE47C /* OMRONLibDemo */;
+			targetProxy = 3E84907E228C0B1700EA20EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EE86A78228955B9007FE47C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE86A79228955B9007FE47C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EE86A7D228955BA007FE47C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE86A7E228955BA007FE47C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E849073228C091800EA20EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMRONLibDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omron.lib.OMRONLibDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OMRONLibDemo;
+			};
+			name = Debug;
+		};
+		3E849074228C091800EA20EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMRONLibDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omron.lib.OMRONLibDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OMRONLibDemo;
+			};
+			name = Release;
+		};
+		3E849081228C0B1700EA20EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMRONLibDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omron.lib.OMRONLibDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMRONLibDemo.app/OMRONLibDemo";
+			};
+			name = Debug;
+		};
+		3E849082228C0B1700EA20EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMRONLibDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omron.lib.OMRONLibDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMRONLibDemo.app/OMRONLibDemo";
+			};
+			name = Release;
+		};
+		3EE86A83228955BA007FE47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3EE86A84228955BA007FE47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EE86A86228955BA007FE47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 7K6GQAFS2H;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OMRONLibDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.omronhealthcare.omronplus.winter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		3EE86A87228955BA007FE47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 7K6GQAFS2H;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OMRONLibDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.omronhealthcare.omronplus.winter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = B2BSDK;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E849072228C091800EA20EB /* Build configuration list for PBXNativeTarget "OMRONLibDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E849073228C091800EA20EB /* Debug */,
+				3E849074228C091800EA20EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E849080228C0B1700EA20EB /* Build configuration list for PBXNativeTarget "OMRONLibDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E849081228C0B1700EA20EB /* Debug */,
+				3E849082228C0B1700EA20EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE86A6A228955B9007FE47C /* Build configuration list for PBXProject "OMRONLibDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE86A83228955BA007FE47C /* Debug */,
+				3EE86A84228955BA007FE47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE86A85228955BA007FE47C /* Build configuration list for PBXNativeTarget "OMRONLibDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE86A86228955BA007FE47C /* Debug */,
+				3EE86A87228955BA007FE47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EE86A67228955B9007FE47C /* Project object */;
+}

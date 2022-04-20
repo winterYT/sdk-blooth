@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BindDeviceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-0w-tra">
+                        <rect key="frame" x="0.0" y="79" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kEu-z8-Wjn"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvW-y3-BZW">
+                        <rect key="frame" x="15" y="0.0" width="290" height="79"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="asy-oK-egn">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="79"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCB-Pv-qpg">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="35.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yi-CP-Lnc">
+                                        <rect key="frame" x="0.0" y="43.5" width="50" height="35.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76f-Nn-xIf">
+                                <rect key="frame" x="230" y="0.0" width="60" height="79"/>
+                                <state key="normal" title="删除">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_del_click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="K6S-38-MFn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="asy-oK-egn" firstAttribute="leading" secondItem="DvW-y3-BZW" secondAttribute="leading" id="Frs-mQ-MSc"/>
+                            <constraint firstItem="76f-Nn-xIf" firstAttribute="leading" secondItem="asy-oK-egn" secondAttribute="trailing" id="GPh-gy-kcZ"/>
+                            <constraint firstAttribute="bottom" secondItem="asy-oK-egn" secondAttribute="bottom" id="NNy-9s-LY9"/>
+                            <constraint firstItem="asy-oK-egn" firstAttribute="top" secondItem="DvW-y3-BZW" secondAttribute="top" id="TSe-2o-NlM"/>
+                            <constraint firstAttribute="trailing" secondItem="asy-oK-egn" secondAttribute="trailing" constant="60" id="cHc-KC-17W"/>
+                            <constraint firstAttribute="bottom" secondItem="76f-Nn-xIf" secondAttribute="bottom" id="dtW-Sn-vjp"/>
+                            <constraint firstItem="76f-Nn-xIf" firstAttribute="top" secondItem="DvW-y3-BZW" secondAttribute="top" id="pLf-Mg-F4m"/>
+                            <constraint firstAttribute="trailing" secondItem="76f-Nn-xIf" secondAttribute="trailing" id="xnK-gS-eGN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jd0-0w-tra" secondAttribute="bottom" id="0Ok-Fw-INv"/>
+                    <constraint firstItem="jd0-0w-tra" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SsR-wl-FO3"/>
+                    <constraint firstAttribute="trailing" secondItem="DvW-y3-BZW" secondAttribute="trailing" constant="15" id="W7V-ia-hGh"/>
+                    <constraint firstAttribute="trailing" secondItem="jd0-0w-tra" secondAttribute="trailing" id="cFi-II-rC6"/>
+                    <constraint firstItem="DvW-y3-BZW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="i82-BB-Ret"/>
+                    <constraint firstItem="DvW-y3-BZW" firstAttribute="bottom" secondItem="jd0-0w-tra" secondAttribute="top" id="p0F-dR-Gll"/>
+                    <constraint firstItem="DvW-y3-BZW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sik-xC-A1i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btn_del" destination="76f-Nn-xIf" id="lPl-ig-76i"/>
+                <outlet property="delLabel" destination="76f-Nn-xIf" id="ula-aj-l7B"/>
+                <outlet property="lab_name" destination="DCB-Pv-qpg" id="kQc-XT-dwF"/>
+                <outlet property="lab_num" destination="7Yi-CP-Lnc" id="BeI-Jv-m5G"/>
+            </connections>
+            <point key="canvasLocation" x="-143" y="38"/>
+        </tableViewCell>
+    </objects>
+</document>

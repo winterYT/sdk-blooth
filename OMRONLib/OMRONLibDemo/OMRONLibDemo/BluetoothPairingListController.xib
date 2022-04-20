@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BluetoothPairingListController">
+            <connections>
+                <outlet property="tableview" destination="vz2-vh-W2u" id="ua2-zg-iwm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_219T" translatesAutoresizingMaskIntoConstraints="NO" id="L58-8h-3qZ">
+                    <rect key="frame" x="0.0" y="94" width="414" height="269"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rF-NC-2Fs">
+                    <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hrd-fS-kmr"/>
+                    </constraints>
+                    <state key="normal" title="从所有设备列表中选择">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="all_devices_click:" destination="-1" eventType="touchUpInside" id="zWN-Yn-mRH"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vz2-vh-W2u">
+                    <rect key="frame" x="0.0" y="363" width="414" height="459"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请操作设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFW-eU-Hxj">
+                    <rect key="frame" x="163.5" y="44" width="87" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="S4G-Vb-7LT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmY-QT-5ku">
+                    <rect key="frame" x="334" y="41.5" width="60" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Fhh-Pk-WcY"/>
+                        <constraint firstAttribute="width" constant="60" id="qQ5-fi-mv3"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="刷新">
+                        <color key="titleColor" red="0.054901960780000002" green="0.062745098040000002" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="refresh_click:" destination="-1" eventType="touchUpInside" id="T1d-rw-GQ4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2rF-NC-2Fs" firstAttribute="top" secondItem="vz2-vh-W2u" secondAttribute="bottom" id="3yU-XH-F1Q"/>
+                <constraint firstItem="2rF-NC-2Fs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="CyN-1i-tsm"/>
+                <constraint firstItem="L58-8h-3qZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="E1p-dp-gSj"/>
+                <constraint firstItem="bmY-QT-5ku" firstAttribute="centerY" secondItem="UFW-eU-Hxj" secondAttribute="centerY" id="E2n-Oa-kW5"/>
+                <constraint firstItem="UFW-eU-Hxj" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="HC9-tn-bxB"/>
+                <constraint firstItem="vz2-vh-W2u" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Huw-R2-Cwt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bmY-QT-5ku" secondAttribute="trailing" constant="20" id="NgK-4F-xzs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vz2-vh-W2u" secondAttribute="trailing" id="bwg-fi-9J5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2rF-NC-2Fs" secondAttribute="trailing" id="ehi-oX-wmv"/>
+                <constraint firstItem="vz2-vh-W2u" firstAttribute="top" secondItem="L58-8h-3qZ" secondAttribute="bottom" id="gG5-ox-M9s"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="L58-8h-3qZ" secondAttribute="trailing" id="k6I-t2-lgu"/>
+                <constraint firstItem="L58-8h-3qZ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="oj2-Xq-HOg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="2rF-NC-2Fs" secondAttribute="bottom" id="r8n-GR-vSf"/>
+                <constraint firstItem="L58-8h-3qZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xEa-dp-GeZ"/>
+                <constraint firstItem="UFW-eU-Hxj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z6u-Yr-80c"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="60.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guide_219T" width="244" height="354"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

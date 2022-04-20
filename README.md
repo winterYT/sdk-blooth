@@ -1,2 +1,1 @@
-# sdk-blooth
-sdk-blooth
+#ios-ble-sdk
