@@ -586,7 +586,7 @@ static void * const KVOContext = (void *)&KVOContext;
                 BSOSessionData *data = self.data;
                 if (data.currentTime == nil) {
                     //                       complete(OMRON_SDK_ConnectFail,@"获取血压数据:currentTime为空",nil);
-                    complete(OMRON_SDK_ConnectFail,nil);
+//                    complete(OMRON_SDK_ConnectFail,nil);
                     NSLog(@"****OMRON_SDK_ConnectFail****");
                 }else{
                     complete(OMRON_SDK_Success,data.measurementRecords);
@@ -629,7 +629,7 @@ static void * const KVOContext = (void *)&KVOContext;
                     
                     if([[advertisingName uppercaseString] isEqualToString:[deviceSerialNum uppercaseString]])
                     {
-                        [[OHQDeviceManager sharedManager] stopScan];
+//                        [[OHQDeviceManager sharedManager] stopScan];
                         self.deviceInfo = deviceInfo;
                         readDataBlock(self.deviceInfo);
                     }
