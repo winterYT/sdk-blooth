@@ -648,7 +648,7 @@ static void * const KVOContext = (void *)&KVOContext;
                     {
 //                        [self.timer invalidate];
 //                        self.timer=nil;
-                        complete(OMRON_SDK_ScanTimeOut,nil);
+                        complete(OMRON_SDK_ConnectFail,nil);
                         [[OHQDeviceManager sharedManager] stopScan];
                     }
                         break;

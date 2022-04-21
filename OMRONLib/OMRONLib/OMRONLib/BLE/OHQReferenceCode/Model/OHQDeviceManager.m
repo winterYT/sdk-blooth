@@ -687,6 +687,7 @@ void ohq_dispatch_to_internal_queue(dispatch_block_t block) {
 }
 
 - (void)stopScan {
+    [self.central stopScan];
     OHQFuncLogI(@"[IN]");
     // 取消原本的timeOutHandler
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(timeOutHanlder:) object:nil];
