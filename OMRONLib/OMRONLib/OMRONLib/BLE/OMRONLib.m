@@ -960,6 +960,7 @@
             if([self isRegister])
            {
                NSString *bPdeviceType;
+               {
                if(deviceType==OMRON_BLOOD_9200T)
                   {
                       [LogManager logInfo:OLOG(@"Acquisition of device data") logStr:@"Get device data to start",@"HEM-9200T",nil];
@@ -1038,6 +1039,7 @@
                       [LogManager logInfo:OLOG(@"Acquisition of device data") logStr:@"begin to get device data",@"J750",nil];
                       bPdeviceType = @"J750";
                   }
+               }
 //                  NSLog(@"-------%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"scanStatus"]);
                    [[[OMRONDeviceManager alloc]init] getBpDeviceData:deviceType deviceSerialNum:deviceSerialNum complete:^(OMRONSDKStatus status, NSArray<NSDictionary *> * _Nonnull measurementRecords){
                        if(status ==OMRON_SDK_Success){

@@ -340,6 +340,8 @@ typedef void (^HandleBlock) (void);
                     self.getDataStatus = 1;
 //                    [ToastUtil hiddenLoadingView];
                     return;
+                }else if (status == OMRON_SDK_ScanCancel) {
+                    [ToastUtil showToast:@"停止扫描"];
                 }
                 self.getDataStatus = 2;
             }

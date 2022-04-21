@@ -634,15 +634,17 @@ void ohq_dispatch_to_internal_queue(dispatch_block_t block) {
             NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey: @YES};
             OHQLogD(@"-[CBCentralManager scanForPeripheralsWithServices:options:] services:%@ options:%@", services, options);
             [weakSelf.central scanForPeripheralsWithServices:services.allObjects options:options];
+            [self performSelector:@selector(timeOutHanlder:) withObject:completion afterDelay:30];
+
 //            NSLog(@"开始到秒倒计时");
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                ohq_dispatch_to_callback_queue(^{
-                    OHQCompletionReason reason = OHQCompletionReasonConnectionTimedOut;
-                    OHQLogI(@"[SCAN] completion(%@)", OHQCompletionReasonDescription(reason));
-                    completion(reason);
-                    NSLog(@"倒计时结束==%zd",reason);
-                });
-            });
+//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//                ohq_dispatch_to_callback_queue(^{
+//                    OHQCompletionReason reason = OHQCompletionReasonConnectionTimedOut;
+//                    OHQLogI(@"[SCAN] completion(%@)", OHQCompletionReasonDescription(reason));
+//                    completion(reason);
+//                    NSLog(@"倒计时结束==%zd",reason);
+//                });
+//            });
             
         };
         weakSelf.scanObserverBlock = ^(NSDictionary<OHQDeviceInfoKey,id> *deviceInfo) {
@@ -676,9 +678,18 @@ void ohq_dispatch_to_internal_queue(dispatch_block_t block) {
     });
 }
 
+- (void)timeOutHanlder:(OHQCompletionBlock)completion {
+    ohq_dispatch_to_callback_queue(^{
+        OHQCompletionReason reason = OHQCompletionReasonConnectionTimedOut;
+        OHQLogI(@"[SCAN] completion(%@)", OHQCompletionReasonDescription(reason));
+        completion(reason);
+    });
+}
+
 - (void)stopScan {
     OHQFuncLogI(@"[IN]");
-    
+    // 取消原本的timeOutHandler
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(timeOutHanlder:) object:nil];
     __weak typeof(self) weakSelf = self;
     ohq_dispatch_to_internal_queue(^{
         if (weakSelf.scanCompletionBlock) {

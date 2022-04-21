@@ -631,6 +631,7 @@ static void * const KVOContext = (void *)&KVOContext;
                     {
                         [[OHQDeviceManager sharedManager] stopScan];
                         self.deviceInfo = deviceInfo;
+                        readDataBlock(self.deviceInfo);
                     }
                 }
             });
@@ -639,20 +640,23 @@ static void * const KVOContext = (void *)&KVOContext;
                 switch (aReason) {
                     case OHQCompletionReasonCanceled:
                     {
+                        complete(OMRON_SDK_ScanCancel,nil);
                         [[OHQDeviceManager sharedManager] stopScan];
                     }
                         break;
                     case OHQCompletionReasonBusy:
                     {
-                        [self.timer invalidate];
-                        self.timer=nil;
+//                        [self.timer invalidate];
+//                        self.timer=nil;
+                        complete(OMRON_SDK_ScanTimeOut,nil);
                         [[OHQDeviceManager sharedManager] stopScan];
                     }
                         break;
                     case OHQCompletionReasonPoweredOff:
                     {
-                        [self.timer invalidate];
-                        self.timer=nil;
+//                        [self.timer invalidate];
+//                        self.timer=nil;
+                        [[OHQDeviceManager sharedManager] stopScan];
                         complete(OMRON_SDK_UnOpenBlueTooth,nil);
                         return;
                     }
@@ -661,34 +665,34 @@ static void * const KVOContext = (void *)&KVOContext;
                     {
                         NSLog(@"timeout");
                         [[OHQDeviceManager sharedManager]stopScan];
-                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                             complete(OMRON_SDK_ScanTimeOut,nil);
-                            return;
-                        });
+//                            return;
+//                        });
                         
                     }
                         break;
                     default:
                         break;
                 }
-                if(self.deviceInfo)
-                {
-                    NSString *advertisingName;
-                    if([self.deviceInfo objectForKey:@"advertisementData"])
-                    {
-                        advertisingName = [[self.deviceInfo objectForKey:@"advertisementData"] objectForKey:@"localName"];
-                    }
-                    if([[advertisingName uppercaseString] isEqualToString:[deviceSerialNum uppercaseString]])
-                    { 
-                        readDataBlock(self.deviceInfo);
-                    }
-                }
-                else
-                {
-                    [self.timer invalidate];
-                    self.timer=nil;
-                    complete(OMRON_SDK_NoDevice,nil);
-                }
+//                if(self.deviceInfo)
+//                {
+//                    NSString *advertisingName;
+//                    if([self.deviceInfo objectForKey:@"advertisementData"])
+//                    {
+//                        advertisingName = [[self.deviceInfo objectForKey:@"advertisementData"] objectForKey:@"localName"];
+//                    }
+//                    if([[advertisingName uppercaseString] isEqualToString:[deviceSerialNum uppercaseString]])
+//                    {
+//
+//                    }
+//                }
+//                else
+//                {
+//                    [self.timer invalidate];
+//                    self.timer=nil;
+//                    complete(OMRON_SDK_NoDevice,nil);
+//                }
             });
         }];
         

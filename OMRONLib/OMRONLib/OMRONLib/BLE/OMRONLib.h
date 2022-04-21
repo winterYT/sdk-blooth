@@ -54,7 +54,8 @@ typedef NS_ENUM(NSInteger, OMRONSDKStatus){
     OMRON_SDK_ConnectFail,
     OMRON_SDK_NoNet,
     OMRON_SDK_UnSupportDevice,
-    OMRON_SDK_ScanTimeOut
+    OMRON_SDK_ScanTimeOut,
+    OMRON_SDK_ScanCancel
 };
 
 typedef NS_ENUM(NSInteger, OMRONBLESStaus)
